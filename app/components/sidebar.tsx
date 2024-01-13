@@ -12,6 +12,7 @@ import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import DragIcon from "../icons/drag.svg";
+import steamkidz from "../icons/steamkidzo.jpg";
 
 import Locale from "../locales";
 
@@ -160,6 +161,8 @@ export function SideBar(props: { className?: string }) {
         <div className={styles["sidebar-sub-title"]}>
          AI assistant.
         </div>
+        <img src={steamkidz} alt="Steamkidzo AI Assistant" />
+
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
         </div>
