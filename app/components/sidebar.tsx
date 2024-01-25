@@ -12,8 +12,7 @@ import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import DragIcon from "../icons/drag.svg";
-import steamkidz from "../icons/steamkidzo.jpg";
-
+import Steamkidzo from "../icons/steamkidzo.jpg";
 import Locale from "../locales";
 
 import { useAppConfig, useChatStore } from "../store";
@@ -143,6 +142,7 @@ export function SideBar(props: { className?: string }) {
   );
 
   useHotKey();
+  const openaiLogoUrl = 'https://i.ibb.co/Qb04HHN/steamkidzo.jpg';
 
   return (
     <div
@@ -161,12 +161,11 @@ export function SideBar(props: { className?: string }) {
         <div className={styles["sidebar-sub-title"]}>
          AI assistant.
         </div>
-        <img src={steamkidz} alt="Steamkidzo AI Assistant" />
-
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
         </div>
       </div>
+      <img src={openaiLogoUrl} alt="OpenAI Logo" />
 
       <div className={styles["sidebar-header-bar"]}>
         {/* <IconButton
@@ -225,6 +224,7 @@ export function SideBar(props: { className?: string }) {
             </a>
           </div> */}
         </div>
+
         <div>
           <IconButton
             icon={<AddIcon />}
@@ -248,6 +248,7 @@ export function SideBar(props: { className?: string }) {
       >
         <DragIcon />
       </div>
+
     </div>
   );
 }
